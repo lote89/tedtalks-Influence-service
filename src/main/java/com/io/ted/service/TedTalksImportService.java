@@ -1,7 +1,7 @@
 package com.io.ted.service;
 
 import com.io.ted.model.TedTalk;
-import com.io.ted.repository.TedTalkRepository;
+import com.io.ted.repository.TedTalksRepository;
 import com.opencsv.CSVReaderHeaderAware;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,9 +13,9 @@ import java.util.Map;
 @Service
 public class TedTalksImportService {
 
-    private final TedTalkRepository repo;
+    private final TedTalksRepository repo;
 
-    public TedTalksImportService(TedTalkRepository repo) {
+    public TedTalksImportService(TedTalksRepository repo) {
         this.repo = repo;
     }
 
