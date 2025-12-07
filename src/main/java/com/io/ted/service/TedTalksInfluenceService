@@ -2,7 +2,7 @@ package com.io.ted.service;
 
 import com.io.ted.dto.SpeakerInfluenceDto;
 import com.io.ted.model.TedTalk;
-import com.io.ted.repository.TedTalkRepository;
+import com.io.ted.repository.TedTalksRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,9 +10,9 @@ import java.util.*;
 @Service
 public class TedTalksInfluenceService {
 
-    private final TedTalkRepository repo;
+    private final TedTalksRepository repo;
 
-    public TedTalksInfluenceService(TedTalkRepository repo) {
+    public TedTalksInfluenceService(TedTalksRepository repo) {
         this.repo = repo;
     }
 
